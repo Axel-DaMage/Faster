@@ -1,4 +1,5 @@
 # Faster
+ ![Banner_Fastest](https://github.com/user-attachments/assets/1317d58d-30be-4705-898d-afb187e99430 | width:10)
  <H2> Fastest config in the west. </H2>
 Faster is an easy to use script that config your FastFetch for you.
 <H2> FEATURES </H2> 
