@@ -10,7 +10,7 @@ Faster is an easy to use script that config your FastFetch for you.
 
 <H2> SETUP </H2>
 
-Install dependences
+Install dependencies
 ```
 apt install Python3
 ```
