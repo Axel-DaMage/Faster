@@ -1,0 +1,2 @@
+# Faster
+Fastfetch configuration script
