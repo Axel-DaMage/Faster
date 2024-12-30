@@ -1,7 +1,0 @@
-{
-    "logo": {
-        "type": "string",
-        "description": "banner",
-        "example": "a"
-    }
-}
