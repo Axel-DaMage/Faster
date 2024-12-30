@@ -1,8 +1,6 @@
 # Faster
-<img src="https://github.com/Axel-DaMage/Faster/Banners/Banner_Fastest.png" width:"10")/>
+<img src="Banners/Banner_Fastest.png" width="30%" align="left" />
 
-
-<H2> Fastest config in the west. </H2>
 Faster is an easy to use script that config your FastFetch for you.
 <H2> FEATURES </H2> 
 
