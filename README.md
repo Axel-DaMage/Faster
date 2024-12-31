@@ -1,5 +1,5 @@
 # Faster
-![Static Badge](https://img.shields.io/badge/license-MIT-green) ![Static Badge](https://img.shields.io/badge/100%25%20python-green) ![Static Badge](https://img.shields.io/badge/Wizard-magenta)
+![Static Badge](https://img.shields.io/badge/license-MIT-green) ![Static Badge](https://img.shields.io/badge/Wizard-magenta)
 <img src="Banners/Banner_Faster.png" width="10%" align="right" />
 
 
