@@ -35,7 +35,26 @@ Run the script:
 ```
 python3 fast_wizard.py
 ```
-
+```
+#1
+```
+gives a list of every pre-config file for you to choose, select one and you will se it on the terminal.
+```
+#2
+```
+gives you the option of selecting diferent components, once done generates an output of your own theme on the terminal.
+```
+#3
+```
+Reset to the default theme in fastfetch
+```
+#4
+```
+gives you the option of selecting a distro ASCII, ASCII archive or image to put in your config file
+```
+#5
+```
+ends the script
 <H2> LICENSE </H2>
 
 This script is under MIT licence for more information visit [LICENSE.md](LICENSE.md)
