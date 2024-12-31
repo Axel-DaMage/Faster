@@ -3,29 +3,29 @@
 <img src="Banners/Banner_Faster.png" width="10%" align="right" />
 
 
-Note: This script is still on development, if any error is encounter please go to issues and make a new issue
+Note: This script is still under development, If you encounter any errors, please go to the issues section and create a new issue.
 
-Faster is an easy to use script that config your FastFetch for you.
+Faster is an easy-to-use script that configures FastFetch for you.
 
 <H2> FEATURES </H2> 
 
-* Pre-config files easy to setup
-* Make your own theme based in every combination posible from our pre-config files
-* Reset your FastFetch configuration
+* Pre-configured files easy to setup
+* Create your own theme based on any combination possible from our pre-configured files
+* Reset FastFetch configuration to default
 
 <H2> SETUP </H2>
-Use your own package manager to install dependencies
+Use your preferred package manager to install dependencies:
 
 ```
 apt install Python3
 apt install lolcat
 apt install git
 ```
-Clone repository
+Clone repository:
 ```
 git clone https://github.com/Axel-DaMage/Faster
 ```
-Acces cloned repository
+Acces cloned repository:
 ```
 cd Faster
 ```
@@ -35,7 +35,7 @@ Run the script:
 ```
 python3 fast_wizard.py
 ```
-once the script is executed you will see 5 options
+once the script is executed you will see 5 options:
 ```
 #1
 ```
@@ -47,15 +47,15 @@ gives you the option of selecting diferent components, once done generates an ou
 ```
 #3
 ```
-Reset to the default theme in fastfetch
+Reset to the default theme in fastfetch,
 ```
 #4
 ```
-gives you the option of selecting a distro ASCII, ASCII archive or image to put in your config file
+gives you the option of selecting a distro ASCII, ASCII archive or image to put in your config file.
 ```
 #5
 ```
-ends the script
+ends the script.
 <H2> LICENSE </H2>
 
 This script is under MIT licence for more information visit [LICENSE.md](LICENSE.md)
