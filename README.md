@@ -1,5 +1,5 @@
 # Faster
-<img src="Banners/Banner_Fastest.png" width="30%" align="left" />
+<img src="Banners/Banner_Faster.png" width="30%" align="left" />
 
 Faster is an easy to use script that config your FastFetch for you.
 <H2> FEATURES </H2> 
