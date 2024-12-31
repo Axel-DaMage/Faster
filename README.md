@@ -1,7 +1,7 @@
 # Faster
 ![Static Badge](https://img.shields.io/badge/license-MIT-green) ![Static Badge](https://img.shields.io/badge/100%25%20python-green) ![Static Badge](https://img.shields.io/badge/Wizard-magenta)
 <img src="Banners/Banner_Faster.png" width="10%" align="right" />
-
+Note: This script is still on development, if any error is encounter please go to issues and make a new 
 
 
 
@@ -35,6 +35,7 @@ Run the script:
 ```
 python3 fast_wizard.py
 ```
+once the script is executed you will see 5 options
 ```
 #1
 ```
