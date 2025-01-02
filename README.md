@@ -34,7 +34,7 @@ cd Faster
 Run the script:
 
 ```
-python3 fast_wizard.py
+python3 faster_wizard.py
 ```
 once the script is executed you will see 5 options:
 ```
