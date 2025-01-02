@@ -22,7 +22,7 @@ class MENU:
         os.system(f'echo "{fast.load_json()}" | lolcat')
         while True:
             fast.load_json()
-            print("1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select image\n5 - Exit")
+            print("Wellcome to the Faster Wizard, please select an option from below.\n1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select image\n5 - Exit")
             number_option = input("#: ")
             action = self.options.get(number_option)
             if action:
@@ -57,14 +57,14 @@ class MENU:
             apply_theme = input("1 - Yes\n2 - No\n#: ")
             
             if apply_theme == "1":
+                print("Theme applied.")
+                time.sleep(1) #########################
+                os.system('clear')
+                #os.system(f'nano ~/.config/fastfetch/config.jsonc') #No mover ruta solo comando
+                fast.menu()
                 try:
                     with open(theme) as file:
                         data = json.load(file)
-                        print("Theme applied.")
-                        time.sleep(1)
-                        os.system('clear')
-                        #os.system(f'nano ~/.config/fastfetch/config.jsonc') #No mover ruta solo comando
-                        fast.menu()
                         os.system('clear')
                 except FileNotFoundError:
                         self.select_theme()
