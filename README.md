@@ -3,7 +3,8 @@
 <img src="Banners/Banner_Faster.png" width="10%" align="right" />
 
 
-Note: This script is still under development, If you encounter any errors, please go to the issues section and create a new issue.
+Note: This project is still under development, If you encounter any errors, please go to the issues section and create a new issue.
+There are no official releases.
 
 Faster is an easy-to-use script that configures FastFetch for you.
 
