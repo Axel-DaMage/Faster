@@ -11,8 +11,9 @@ class MENU:
             "1": self.select_theme,
             "2": self.theme_maker,
             "3": self.reset_to_default,
-            "4": self.select_image,
-            "5": self.salir,
+            "4": self.select_logo,
+            "5": self.show,
+            "6": self.salir,
         }
 
 #MENU --------------
@@ -22,7 +23,7 @@ class MENU:
         os.system(f'echo "{fast.load_json()}" | lolcat')
         while True:
             fast.load_json()
-            print("Wellcome to the Faster Wizard, please select an option from below.\n1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select image\n5 - Exit")
+            print("Wellcome to the Faster Wizard, please select an option from below.\n1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select logo\n5 - Show my config\n6 - Exit")
             number_option = input("#: ")
             action = self.options.get(number_option)
             if action:
@@ -91,11 +92,11 @@ class MENU:
         print("Are you sure you want to reset to default? (y/n)")
         theme = input("#:S ")
 
-#IMAGE SELECT --------------
+#LOGO SELECT --------------
 
-    def select_image(self):
+    def select_logo(self):
         os.system('clear')
-        print("Select image")
+        print("Select logo")
         theme = input("#: ")
 
 #JSON LOAD BANNER --------------
@@ -117,6 +118,14 @@ class MENU:
     def salir(self):
         print("Exiting program.")
         exit()
+
+    def show(self):
+        os.system('clear')
+        print("Your current configuration is:")
+        print(fast.load_json()) #TODO
+        print("Press any key to return to the menu.")
+        input()
+        fast.menu()
 
     def __str__(self):
         return "MENU Class"
