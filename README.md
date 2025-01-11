@@ -31,7 +31,7 @@ Acces cloned repository:
 cd Faster
 ```
 <H2> USAGE </H2>
-Run the script:
+Run the script strictly from the directory:
 
 ```
 python3 faster_wizard.py
