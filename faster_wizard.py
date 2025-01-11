@@ -23,7 +23,7 @@ class MENU:
         os.system(f'echo "{fast.load_json()}" | lolcat')
         while True:
             fast.load_json()
-            print("Wellcome to the Faster Wizard, please select an option from below.\n1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select logo\n5 - Show my config\n6 - Exit")
+            print("Wellcome to the Faster Wizard, please select an option from below.\n1 - Select from default themes\n2 - Theme maker\n3 - Reset to default\n4 - Select logo\n5 - Show my configuration\n6 - Exit")
             number_option = input("#: ")
             action = self.options.get(number_option)
             if action:
@@ -61,7 +61,7 @@ class MENU:
                 print("Theme applied.")
                 time.sleep(1) #########################
                 os.system('clear')
-                #os.system(f'nano ~/.config/fastfetch/config.jsonc') #No mover ruta solo comando
+                #os.system(f'nano ~/.config/fastfetch/config.jsonc') #No mover ruta solo comando, aplicar tema
                 fast.menu()
                 try:
                     with open(theme) as file:
@@ -82,23 +82,46 @@ class MENU:
 
     def theme_maker(self):
         os.system('clear')
-        print("1. Change color")
+        print("1 - Change color")
         theme = input("#: ")
 
 #THEME RESET --------------
 
     def reset_to_default(self):
         os.system('clear')
-        print("Are you sure you want to reset to default? (y/n)")
-        theme = input("#:S ")
+        print("Are you sure you want to reset to default? (y/n).")
+        theme = input("#: ")
+        if theme == "y":
+            print("Reseting to default...")
+            #TODO
+            time.sleep(1)
+            os.system('fastfetch')
+            print("This is your current fastfetch configuration.")
+            
+        else:
+            print("Returning to menu...")
+            time.sleep(1)
+            os.system('clear')
+            fast.menu()
 
 #LOGO SELECT --------------
 
     def select_logo(self):
         os.system('clear')
-        print("Select logo")
+        print("1 - Logo list\n2 - Show all logos in terminal\n3 - Select path to custom image or ASCII.")
         theme = input("#: ")
-
+        if theme == "1":
+            os.system('clear')
+            print("Logo list")
+            os.system('fastfetch --list-logos')
+            print("Select a logo number from the list.")
+            logo = input("#: ")
+        
+        elif theme == "2":
+            os.system('clear')
+            print("Select path to custom image or ASCII.\nIf the path is not correct, the default logo will be used.\nRemember that if you select an image you need a terminal that can support it.")
+            logo = input("#: ")
+            os.system(f'fastfetch --logo {logo}')
 #JSON LOAD BANNER --------------
 
     def load_json(self) -> dict:
@@ -122,7 +145,7 @@ class MENU:
     def show(self):
         os.system('clear')
         print("Your current configuration is:")
-        print(fast.load_json()) #TODO
+        os.system('fastfetch')
         print("Press any key to return to the menu.")
         input()
         fast.menu()
