@@ -26,7 +26,7 @@ Clone repository:
 ```
 git clone https://github.com/Axel-DaMage/Faster
 ```
-Acces cloned repository:
+Access cloned repository:
 ```
 cd Faster
 ```
