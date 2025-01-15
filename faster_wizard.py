@@ -128,9 +128,10 @@ class MENU:
         os.system('clear')
         print(Fore.GREEN + "1 - Logo list" + Fore.RESET + "\n" + Fore.YELLOW + "2 - Show all logos in terminal" + Fore.RESET + "\n" + Fore.CYAN + "3 - Select path to custom image or ASCII." + Fore.RESET)
         theme = input(Fore.CYAN + "#: " + Fore.RESET)
+
         if theme == "1":
             os.system('clear')
-            os.system('fastfetch --list-logos | lolcat')
+            os.system('fastfetch --list-logos')
             print(Fore.BLUE + "Select a logo number from the list." + Fore.RESET)
             logo = input(Fore.CYAN + "#: " + Fore.RESET)
         
@@ -139,13 +140,16 @@ class MENU:
             os.system('fastfetch --print-logos')
             print(Fore.BLUE + "Press enter to return to the menu." + Fore.RESET)
             input()
-            fast.menu()
+            self.menu()
 
         elif theme == "3":
             os.system('clear')
             print(Fore.BLUE + "Select path to custom image or ASCII.\nIf the path incorrect, the default logo will be used.\nIf you select an image you need a terminal that can support it." + Fore.RESET)
             logo = input(Fore.CYAN + "#: " + Fore.RESET)
             os.system(f'fastfetch --logo {logo}')
+
+        else:
+            self.select_logo()
 
 #JSON LOAD BANNER --------------
 
